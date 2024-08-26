@@ -1,4 +1,7 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
+﻿document.addEventListener("DOMContentLoaded", function() {
+    // Simular un tiempo de carga
+    setTimeout(function() {
+        // Redirigir a la página principal
+        window.location.href =  "index.html"; // Reemplaza con la URL de la página principal
+    }, 3000); // 3 segundos de carga
+});

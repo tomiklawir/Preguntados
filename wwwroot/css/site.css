@@ -1,23 +1,83 @@
-html {
-  font-size: 14px;
-  min-height: 100%;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
 body {
-  margin: 10px;
-  padding: 10px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  background-color: #6d12d6;
 }
 
-
-footer {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #f8f9fa;
-  border-top: 1px solid #e9ecef;
+.logo {
+  width: 50%; /* Ajusta el tamaño de la imagen según sea necesario */
+  margin-bottom: 10%; /* Ajusta el espacio entre la imagen y el spinner */
+  margin-left: 25%;
 }
+.spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin-left: 48%;
+  
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.contenido {
+  display: none;
+  text-align: center;
+}
+
+.contenido.mostrar {
+  display: block;
+}
+.inicio{
+  background-color: #f3f3f3;
+  border-radius: 2%;
+}
+header{
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2%;
+  margin-top: 7%;
+}
+
+.button-container {
+  text-align: center;
+
+}
+
+.btn {
+  display: block;
+  width: 300px;
+  padding: 20px;
+  margin: 20px auto;
+  font-size: 24px;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #007bff;
+}
+
+.btn-config {
+  background-color: hsl(209, 100%, 50%);
+}
+
