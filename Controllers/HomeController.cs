@@ -17,11 +17,11 @@ public class HomeController : Controller
     {
         return View();
     }
-    public IActionResult ConfigurarJuego()
+    /*public IActionResult ConfigurarJuego()
     {
         Juego.InicializarJuego();
         ViewBag.Categorias = 
         ViewBag.Dificultades = 
         return View("ConfigurarJuego");
-    }
+    }*/
 }

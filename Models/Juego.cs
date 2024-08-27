@@ -25,7 +25,7 @@ public class Juego {
         preguntas = BD.ObtenerPreguntas;
         respuestas = BD.ObtenerRespuestas;
     }
-    public static Pregunta ObtenerProximaPregunta(List<string> preguntas){
+    public static Pregunta ObtenerProximaPregunta(List<Pregunta> preguntas){
         return preguntas;
     }
     public static Respuesta ObtenerProximaRespuesta(int idPregunta){
