@@ -18,15 +18,32 @@ public class BD{
         }
         return ListaDificultades;
     }
-    public static ObtenerPreguntas(int dificultad, int categoria){
-        List<Pregunta> ListaPreguntas = null;
-        using(SqlConnection db = new SqlConnection(_connectionString)){
-            string sql = "SELECT * FROM Preguntas";
-            ListaPreguntas = db.Query<Pregunta>(sql).ToList();
+    public static List<Pregunta> ObtenerPreguntas(int dificultad, int categoria)
+    {
+        if (categoria == -1 && dificultad == -1) //Cualquier pregunta
+        {
+            
         }
-        return ListaPreguntas;
+        else if (categoria != -1 && dificultad == -1) //Todas las preguntas de una dificultad sin importar la categoría
+        {
+
+        }
+        else if (categoria == -1 && dificultad != -1) //Todas las preguntas de una categoría sin importar dificultad
+        {
+
+        }
+        else if (categoria != -1 && dificultad != -1) //Todas las preguntas de una cierta dificultad y una cierta categoria
+        {
+
+        }
     }
-    public static ObtenerRespuestas(List preguntas){
-        
+    return ;//Devuelve una lista con todas las preguntas que se le van a mostrar al usuario
+    public static ObtenerRespuestas(List preguntas)
+    {
+        List<Respuesta> ListaRespuestas = null;
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+            
+        }
     }
 }
