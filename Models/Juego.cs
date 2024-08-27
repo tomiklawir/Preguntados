@@ -7,13 +7,13 @@ public class Juego {
     private static List<Respuesta> respuestas { get; set; }
 
 	public static void InicializarJuego(){
-        username = " ";
+        username = null;
         puntajeActual = 0;
         cantidadPreguntasCorrectas = 0;
     }
 
-	public static List<string> ObtenerCategorias(){
-        List<string> lista = new List<string>();
+	public static List<Categoria> ObtenerCategorias(){
+        List<Categoria> lista = new List<Categoria>();
         foreach(Categoria c in BD.ObtenerCategorias)
         {
             lista.AddRange(c);
@@ -21,12 +21,25 @@ public class Juego {
 	    return lista;
 	}
 
-    public static List<string> ObtenerDificultades(){
-        List<string> lista = new List<string>();
+    public static List<Dificultad> ObtenerDificultades(){
+        List<Dificultad> lista = new List<Dificultad>();
         foreach(Dificultad d in BD.ObtenerDificultades)
         {
             lista.AddRange(d);
         }
 	    return lista;
 	}
+
+    public static void CargarPartida(string username, int dificultad, int categoria){
+        preguntas = BD.ObtenerPreguntas();
+        respuestas = BD.ObtenerRespuestas();
+    }
+
+    public static ObtenerProximaPregunta(){
+        
+    }
+
+    public static ObtenerProximasRespuestas(int idPregunta){
+
+    }
 }
