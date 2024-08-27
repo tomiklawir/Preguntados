@@ -20,8 +20,8 @@ public class HomeController : Controller
     public IActionResult ConfigurarJuego()
     {
         Juego.InicializarJuego();
-        ViewBag.Categorias = BD.ObtenerCategorias();
-        ViewBag.Dificultades = BD.ObtenerDificultades();
+        ViewBag.Categorias = Juego.ObtenerCategorias();
+        ViewBag.Dificultades = Juego.ObtenerDificultades();
         return View("ConfigurarJuego");
     }
 }

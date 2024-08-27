@@ -14,21 +14,19 @@ public class Juego {
 
 	public static List<string> ObtenerCategorias(){
         List<string> lista = new List<string>();
+        foreach(Categoria c in BD.ObtenerCategorias)
+        {
+            lista.AddRange(c);
+        }
 	    return lista;
 	}
 
     public static List<string> ObtenerDificultades(){
         List<string> lista = new List<string>();
+        foreach(Dificultad d in BD.ObtenerDificultades)
+        {
+            lista.AddRange(d);
+        }
 	    return lista;
 	}
-    public static void CargarPartida(string username, int dificultad, int categoria){
-        preguntas = BD.ObtenerPreguntas;
-        respuestas = BD.ObtenerRespuestas;
-    }
-    public static Pregunta ObtenerProximaPregunta(List<Pregunta> preguntas){
-        return preguntas;
-    }
-    public static Respuesta ObtenerProximaRespuesta(int idPregunta){
-
-    }
 }
