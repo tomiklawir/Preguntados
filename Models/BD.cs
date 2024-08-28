@@ -2,7 +2,7 @@ using System.Data.SqlClient;
 using Dapper;
 public class BD{
     private static string _connectionString = @"Server = localhost; DataBase = PreguntadORT; Trusted_Connection=True";
-    public static ObtenerCategorias(){
+    public static List<Categoria> ObtenerCategorias(){
         List<Categoria> ListaCategorias = null;
         using(SqlConnection db = new SqlConnection(_connectionString)){
             string sql = "SELECT * FROM Categorias";
@@ -10,7 +10,7 @@ public class BD{
         }
         return ListaCategorias;
     }
-    public static void ObtenerDificultades(){
+    public static List<Dificultad> ObtenerDificultades(){
         List<Dificultad> ListaDificultades = null;
         using(SqlConnection db = new SqlConnection(_connectionString)){
             string sql = "SELECT * FROM Dificultades";
@@ -18,32 +18,36 @@ public class BD{
         }
         return ListaDificultades;
     }
-    public static List<Pregunta> ObtenerPreguntas(int dificultad, int categoria)
-    {
-        if (categoria == -1 && dificultad == -1) //Cualquier pregunta
-        {
-            
+   public static List<Pregunta> ObtenerPreguntas(int Dificultad, int Categorias){
+        string query = "SELECT * FROM Preguntas INNER JOIN Dificultades ON Preguntas.IdDificultad = Preguntas.IdDificultad INNER JOIN Categorias ON Preguntas.IdCategoria = Categorias.IdCategoria WHERE IdDificultad = @idDificultad AND IdCategoria = @idCategoria";
+        List<Pregunta> Pregunta = null;
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            Pregunta = db.Query<Pregunta>(query, new{@idDificultad = Dificultad, @IdCategoria = Categorias}).ToList();
         }
-        else if (categoria != -1 && dificultad == -1) //Todas las preguntas de una dificultad sin importar la categoría
-        {
-
-        }
-        else if (categoria == -1 && dificultad != -1) //Todas las preguntas de una categoría sin importar dificultad
-        {
-
-        }
-        else if (categoria != -1 && dificultad != -1) //Todas las preguntas de una cierta dificultad y una cierta categoria
-        {
-
-        }
+        return Pregunta;
     }
-    return ;//Devuelve una lista con todas las preguntas que se le van a mostrar al usuario
-    public static ObtenerRespuestas(List preguntas)
-    {
-        List<Respuesta> ListaRespuestas = null;
-        using(SqlConnection db = new SqlConnection(_connectionString))
-        {
-            
-        }
+
+    public static List<Respuesta> ObtenerRespuestas(List<Pregunta> preguntas){
+        string sql = "SELECT * FROM Respuestas WHERE IdPregunta IN @pIdPreguntas;";
+         int[] IdPregunta = ExtraerIdPreguntas(preguntas); 
+         List<Respuesta> listadoRespuestas; 
+
+         using(SqlConnection BD = new SqlConnection(CONNECTION_STRING)){
+              listadoRespuestas = BD.Query<Respuesta>(sql, new {pIdPreguntas = IdPregunta} ).ToList();
+         }
+        return listadoRespuestas;
     }
+
+
+    public static int[] ExtraerIdPreguntas(List<Pregunta> preguntas){
+        int cantPreguntas = preguntas.Count;
+        int[] idPreguntas = new int[cantPreguntas];
+        for (int i = 0; i < cantPreguntas; i++){
+            idPreguntas[i] = preguntas[i].IdPregunta;
+        } 
+        return idPreguntas;
+    }
+ 
+ 
+    
 }
