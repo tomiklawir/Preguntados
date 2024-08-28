@@ -32,7 +32,7 @@ public class BD{
          int[] IdPregunta = ExtraerIdPreguntas(preguntas); 
          List<Respuesta> listadoRespuestas; 
 
-         using(SqlConnection BD = new SqlConnection(CONNECTION_STRING)){
+         using(SqlConnection BD = new SqlConnection(_connectionString)){
               listadoRespuestas = BD.Query<Respuesta>(sql, new {pIdPreguntas = IdPregunta} ).ToList();
          }
         return listadoRespuestas;

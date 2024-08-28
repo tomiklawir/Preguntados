@@ -24,4 +24,18 @@ public class HomeController : Controller
         ViewBag.Dificultades = Juego.ObtenerDificultades();
         return View("ConfigurarJuego");
     }
+    public IActionResult Comenzar(string username, int dificultad, int categoria){
+        Juego.CargarPartida(username, dificultad, categoria);
+    }
+
+    public IActionResult Jugar(){
+        ViewBag.PregSiguiente = Juego.ObtenerProximaPregunta();
+        if(ViewBag.PregSiguiente != null){
+            VeiwBag.RespSiguiente = Juego.ObtenerProximasRespuestas(ViewBag.PregSiguiente.IdPregunta);
+            return View("Jugar");
+        }
+        else{
+            return View("Fin");
+        }
+    }
 }
