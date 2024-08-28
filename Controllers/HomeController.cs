@@ -26,6 +26,12 @@ public class HomeController : Controller
     }
     public IActionResult Comenzar(string username, int dificultad, int categoria){
         Juego.CargarPartida(username, dificultad, categoria);
+        if(){
+            return View("Juego");
+        }
+        else{
+            return View("ConfigurarJuego");
+        }
     }
 
     public IActionResult Jugar(){
