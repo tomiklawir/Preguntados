@@ -1,10 +1,10 @@
 public class Juego {
 
-    private static string username { get; set; }
-    private static int puntajeActual { get; set; }
-    private static int cantidadPreguntasCorrectas { get; set; }
+    public static string username { get; set; }
+    public static int puntajeActual { get; set; }
+    public static int cantidadPreguntasCorrectas { get; set; }
     public static List<Pregunta> preguntas { get; set;}
-    private static List<Respuesta> respuestas { get; set; }
+    public static List<Respuesta> respuestas { get; set; }
 
 	public static void InicializarJuego(){
         username = null;
@@ -14,7 +14,7 @@ public class Juego {
 
 	public static List<Categoria> ObtenerCategorias(){
         List<Categoria> lista = new List<Categoria>();
-        foreach(Categoria c in BD.ObtenerCategorias)
+        foreach(Categoria c in BD.ObtenerCategorias())
         {
             lista.AddRange(c);
         }
@@ -23,7 +23,7 @@ public class Juego {
 
     public static List<Dificultad> ObtenerDificultades(){
         List<Dificultad> lista = new List<Dificultad>();
-        foreach(Dificultad d in BD.ObtenerDificultades)
+        foreach(Dificultad d in BD.ObtenerDificultades())
         {
             lista.AddRange(d);
         }
@@ -31,8 +31,8 @@ public class Juego {
 	}
 
     public static void CargarPartida(string username, int dificultad, int categoria){
-        preguntas = BD.ObtenerPreguntas();
-        respuestas = BD.ObtenerRespuestas();
+        preguntas = BD.ObtenerPreguntas(dificultad, categoria);
+        respuestas = BD.ObtenerRespuestas(preguntas);
     }
 
     public static Pregunta ObtenerProximaPregunta(){
@@ -44,15 +44,15 @@ public class Juego {
 
     public static List<Respuesta> ObtenerProximasRespuestas(int idPregunta){
         List<Respuesta> rtas = new List<Respuesta> ();
-        rtas.Add(Respuesta[idPregunta]);
+        rtas.Add(respuestas[idPregunta]);
         return rtas;
     }
 
     public static bool VerificarRespuesta(int IdPregunta, int IdRespuesta){
-        if(Pregunta[idPregunta].IdPregunta == Respuesta[idPregunta].IdPregunta){
-            PuntajeActual++;
-            Pregunta.RemoveAt(idPregunta);
-            Pregunta.RemoveAt(idRespuesta);
+        if(preguntas[IdPregunta].IdPregunta == respuestas[IdPregunta].IdPregunta){
+            puntajeActual++;
+            preguntas.RemoveAt(IdPregunta);
+            preguntas.RemoveAt(IdPregunta);
             return true;
         }
         else{

@@ -63,3 +63,15 @@ C:\Users\48385206\Desktop\Preguntados-1\obj\Debug\net8.0\Preguntados.sourcelink.
 C:\Users\48385206\Desktop\Preguntados-1\obj\Debug\net8.0\Preguntados.dll
 C:\Users\48385206\Desktop\Preguntados-1\obj\Debug\net8.0\refint\Preguntados.dll
 C:\Users\48385206\Desktop\Preguntados-1\obj\Debug\net8.0\Preguntados.pdb
+C:\Users\48385206\Desktop\Preguntados\obj\Debug\net8.0\Preguntados.csproj.AssemblyReference.cache
+C:\Users\48385206\Desktop\Preguntados\obj\Debug\net8.0\Preguntados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\48385206\Desktop\Preguntados\obj\Debug\net8.0\Preguntados.AssemblyInfoInputs.cache
+C:\Users\48385206\Desktop\Preguntados\obj\Debug\net8.0\Preguntados.AssemblyInfo.cs
+C:\Users\48385206\Desktop\Preguntados\obj\Debug\net8.0\Preguntados.csproj.CoreCompileInputs.cache
+C:\Users\48385206\Desktop\Preguntados\obj\Debug\net8.0\Preguntados.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\48385206\Desktop\Preguntados\obj\Debug\net8.0\Preguntados.RazorAssemblyInfo.cache
+C:\Users\48385206\Desktop\Preguntados\obj\Debug\net8.0\Preguntados.RazorAssemblyInfo.cs
+C:\Users\48385206\Desktop\Preguntados\obj\Debug\net8.0\Preguntados.sourcelink.json
+C:\Users\48385206\Desktop\Preguntados\obj\Debug\net8.0\Preguntados.dll
+C:\Users\48385206\Desktop\Preguntados\obj\Debug\net8.0\refint\Preguntados.dll
+C:\Users\48385206\Desktop\Preguntados\obj\Debug\net8.0\Preguntados.pdb
