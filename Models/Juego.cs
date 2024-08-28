@@ -49,6 +49,14 @@ public class Juego {
     }
 
     public static bool VerificarRespuesta(int IdPregunta, int IdRespuesta){
-        
+        if(Pregunta[idPregunta].IdPregunta == Respuesta[idPregunta].IdPregunta){
+            PuntajeActual++;
+            Pregunta.RemoveAt(idPregunta);
+            Pregunta.RemoveAt(idRespuesta);
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 }
