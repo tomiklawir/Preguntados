@@ -38,7 +38,6 @@ public class BD{
         return listadoRespuestas;
     }
 
-
     public static int[] ExtraerIdPreguntas(List<Pregunta> preguntas){
         int cantPreguntas = preguntas.Count;
         int[] idPreguntas = new int[cantPreguntas];
@@ -47,7 +46,4 @@ public class BD{
         } 
         return idPreguntas;
     }
- 
- 
-    
 }

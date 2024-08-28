@@ -35,11 +35,20 @@ public class Juego {
         respuestas = BD.ObtenerRespuestas();
     }
 
-    public static ObtenerProximaPregunta(){
-        
+    public static Pregunta ObtenerProximaPregunta(){
+        Random rand = new Random();
+        int azar = rand.Next(preguntas.Count());
+        Pregunta pregRandom = preguntas[azar];
+        return pregRandom;
     }
 
-    public static ObtenerProximasRespuestas(int idPregunta){
+    public static List<Respuesta> ObtenerProximasRespuestas(int idPregunta){
+        List<Respuesta> rtas = new List<Respuesta> ();
+        rtas.Add(Respuesta[idPregunta]);
+        return rtas;
+    }
 
+    public static bool VerificarRespuesta(int IdPregunta, int IdRespuesta){
+        
     }
 }
