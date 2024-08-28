@@ -16,7 +16,7 @@ public class Juego {
         List<Categoria> lista = new List<Categoria>();
         foreach(Categoria c in BD.ObtenerCategorias())
         {
-            lista.AddRange(c);
+            lista.Add(c);
         }
 	    return lista;
 	}
@@ -25,7 +25,7 @@ public class Juego {
         List<Dificultad> lista = new List<Dificultad>();
         foreach(Dificultad d in BD.ObtenerDificultades())
         {
-            lista.AddRange(d);
+            lista.Add(d);
         }
 	    return lista;
 	}
