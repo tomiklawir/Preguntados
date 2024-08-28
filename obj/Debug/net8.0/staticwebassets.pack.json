@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\48385206\\Desktop\\Preguntados\\wwwroot\\img\\fondo.jpg",
+      "PackagePath": "staticwebassets\\img\\fondo.jpg"
+    },
+    {
       "Id": "C:\\Users\\48385206\\Desktop\\Preguntados\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

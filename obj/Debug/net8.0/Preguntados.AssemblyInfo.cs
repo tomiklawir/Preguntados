@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Preguntados")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ccbb64c101f6107f4fae5c220a0448f45a491ce8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a1393c6fc9a25f7b953b13a2661cc108bceeeae")]
 [assembly: System.Reflection.AssemblyProductAttribute("Preguntados")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Preguntados")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
