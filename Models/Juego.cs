@@ -3,7 +3,7 @@ public class Juego {
     private static string username { get; set; }
     private static int puntajeActual { get; set; }
     private static int cantidadPreguntasCorrectas { get; set; }
-    private static List<Pregunta> preguntas { get; set;}
+    public static List<Pregunta> preguntas { get; set;}
     private static List<Respuesta> respuestas { get; set; }
 
 	public static void InicializarJuego(){
