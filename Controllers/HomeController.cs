@@ -31,7 +31,7 @@ public class HomeController : Controller
     public IActionResult Jugar(){
         ViewBag.PregSiguiente = Juego.ObtenerProximaPregunta();
         if(ViewBag.PregSiguiente != null){
-            VeiwBag.RespSiguiente = Juego.ObtenerProximasRespuestas(ViewBag.PregSiguiente.IdPregunta);
+            ViewBag.RespSiguiente = Juego.ObtenerProximasRespuestas(ViewBag.PregSiguiente.IdPregunta);
             return View("Jugar");
         }
         else{
