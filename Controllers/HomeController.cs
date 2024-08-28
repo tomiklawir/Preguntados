@@ -38,4 +38,8 @@ public class HomeController : Controller
             return View("Fin");
         }
     }
+    public IActionResult VerificarRespuesta(int idPregunta, int idRespuesta){
+        ViewBag.EsCorrecto = Juego.VerificarRespuesta(idPregunta, idRespuesta);
+        return View("Respuesta");
+    }
 }
