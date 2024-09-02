@@ -2,14 +2,17 @@
     ViewData["Title"] = "Index";
 }
 
-<body>
-    <header>
-        <img src="texto.png" alt="" width="100%">
+<body class="index">
     
-    <div class="button-container">
-        <a href="inicio.html" class="btn">Inicio</a>
-        <a href="configuracion.html" class="btn btn-config">Configuración</a>
-    </div>
-    </header>
+    <section>
+        <div>
+        </div>
+            <img src="~/img/texto.png" alt="" width="100%">
+        <div>
+            <div class="button-container">
+            <a href='@Url.Action("inicio")'  class="btn">inicio</a>
+            <a href='@Url.Action("ConfigurarJuego")' class="btn btn-config">Configuración</a>
+        </div>
+    </section>
 </body>
 

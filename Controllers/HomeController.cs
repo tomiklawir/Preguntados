@@ -17,6 +17,14 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult carga()
+    {
+        return View();
+    }
+     public IActionResult inicio()
+    {
+        return View();
+    }
     public IActionResult ConfigurarJuego()
     {
         Juego.InicializarJuego();
@@ -25,6 +33,13 @@ public class HomeController : Controller
         return View("ConfigurarJuego");
     }
     public IActionResult Comenzar(string username, int dificultad, int categoria){
+        if (username == "")
+            username = "Jugador 1";
+        if (dificultad == 0)
+            dificultad = -1;
+        if (categoria == 0)
+            categoria = -1;
+
         Juego.CargarPartida(username, dificultad, categoria);
         if(Juego.preguntas.Count() > 0){
             return RedirectToAction("Juego");

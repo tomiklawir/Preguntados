@@ -2,17 +2,16 @@
     ViewData["Title"] = "carga";
 }
 <body>
+   
     <div id="cargando" class="cargando">
-        <img src="preguntadosjpg.webp" alt="Logo" class="logo">
-        <div class="spinner-border" role="status">
-        <span class="visually-hidden">Loading...</span>
-</div>
+        <img src="/preguntadosjpg.webp" alt="Logo" class="logo">
+        <div class="spinner"></div>
     </div>
     <script >document.addEventListener("DOMContentLoaded", function() {
     // Simular un tiempo de carga
     setTimeout(function() {
         // Redirigir a la página principal
-        window.location.href =  "Index.cshtml"; // Reemplaza con la URL de la página principal
+        window.location.href = "/Home/Index"; // Reemplaza con la URL de la página principal
     }, 3000); // 3 segundos de carga
 });</script>
 </body>
