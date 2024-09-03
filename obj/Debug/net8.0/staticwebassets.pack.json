@@ -1,87 +1,91 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\mcywi\\Downloads\\Preguntados\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\mcywi\\Downloads\\Preguntados\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\img\\Head.png",
+      "Id": "C:\\Users\\mcywi\\Downloads\\Preguntados\\wwwroot\\img\\Head.png",
       "PackagePath": "staticwebassets\\img\\Head.png"
     },
     {
-      "Id": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\img\\fondo.webp",
+      "Id": "C:\\Users\\mcywi\\Downloads\\Preguntados\\wwwroot\\img\\fondo.webp",
       "PackagePath": "staticwebassets\\img\\fondo.webp"
     },
     {
-      "Id": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\img\\pregunta2.png",
+      "Id": "C:\\Users\\mcywi\\Downloads\\Preguntados\\wwwroot\\img\\pregunta2.png",
       "PackagePath": "staticwebassets\\img\\pregunta2.png"
     },
     {
-      "Id": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\img\\preguntados.webp",
+      "Id": "C:\\Users\\mcywi\\Downloads\\Preguntados\\wwwroot\\img\\preguntados.webp",
       "PackagePath": "staticwebassets\\img\\preguntados.webp"
     },
     {
-      "Id": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\img\\texto.png",
+      "Id": "C:\\Users\\mcywi\\Downloads\\Preguntados\\wwwroot\\img\\preguntadosjpg.webp",
+      "PackagePath": "staticwebassets\\img\\preguntadosjpg.webp"
+    },
+    {
+      "Id": "C:\\Users\\mcywi\\Downloads\\Preguntados\\wwwroot\\img\\texto.png",
       "PackagePath": "staticwebassets\\img\\texto.png"
     },
     {
-      "Id": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\mcywi\\Downloads\\Preguntados\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\mcywi\\Downloads\\Preguntados\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\mcywi\\Downloads\\Preguntados\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\mcywi\\Downloads\\Preguntados\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\mcywi\\Downloads\\Preguntados\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\mcywi\\Downloads\\Preguntados\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\mcywi\\Downloads\\Preguntados\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\mcywi\\Downloads\\Preguntados\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\mcywi\\Downloads\\Preguntados\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\mcywi\\Downloads\\Preguntados\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\mcywi\\Downloads\\Preguntados\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\mcywi\\Downloads\\Preguntados\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\mcywi\\Downloads\\Preguntados\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\sql\\bd.sql",
+      "Id": "C:\\Users\\mcywi\\Downloads\\Preguntados\\wwwroot\\sql\\bd.sql",
       "PackagePath": "staticwebassets\\sql\\bd.sql"
     },
     {

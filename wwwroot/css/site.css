@@ -12,7 +12,6 @@ body {
   justify-content: center;
 }
 
-
 .logo {
   width: 30%; /* Ajusta el tamaño de la imagen según sea necesario */
   margin-bottom: 10%; /* Ajusta el espacio entre la imagen y el spinner */
@@ -42,10 +41,7 @@ body {
 .contenido.mostrar {
   display: block;
 }
-.inicio{
-  background-color: #f3f3f3;
-  border-radius: 2%;
-}
+
 section{
   align-items: center;
   background-color: rgb(0, 0, 0);
