@@ -89,8 +89,12 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\sql\\bd.sql",
-      "PackagePath": "staticwebassets\\sql\\bd.sql"
+      "Id": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\sql\\Datos.sql",
+      "PackagePath": "staticwebassets\\sql\\Datos.sql"
+    },
+    {
+      "Id": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\sql\\Tablas.sql",
+      "PackagePath": "staticwebassets\\sql\\Tablas.sql"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Preguntados.Microsoft.AspNetCore.StaticWebAssets.props",

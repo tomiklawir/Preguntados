@@ -1,21 +1,20 @@
 @{
     ViewData["Title"] = "ConfigurarJuego";
 }
-<form action='@Url.Action("Comenzar","HomeController")' id="sectionForm">
+    <form action='@Url.Action("Comenzar", "Home")'>
     <select class="form-select" size="3" aria-label="Size 3 select example" required>
         <option selected >Dificultad</option>
-        @{
-            for(int i = 0; i< ViewBag.Dificultades.length; i++){
-                <option value = "@i">@ViewBag.Dificultades[i]</option>
-            }
-        }
+       @for (int i = 0; i < ViewBag.Dificultades.Count; i++)
+    {
+    <option value="@i">@ViewBag.Dificultades[i].Nombre</option>
+    }
     </select>
 
     <select class="form-select" size="3" aria-label="Size 3 select example" required>
          <option selected >Categoria</option>
          @{
-            for(int i = 0; i< ViewBag.Categorias.length; i++){
-                <option value="@i">@ViewBag.Categorias[i]</option>
+            for(int i = 0; i< ViewBag.Categorias.Count; i++){
+                <option value="@i">@ViewBag.Categorias[i].Nombre</option>
             }
         }
     </select>

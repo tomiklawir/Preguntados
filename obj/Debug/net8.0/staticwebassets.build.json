@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BnIvyOlO3a6JbSvGuC/AoMQj1drB+OCk7K5DuBACikQ=",
+  "Hash": "shDfQHGsstyJdRHybsh9dxkWvTHEodZ5Nig0DiU372w=",
   "Source": "Preguntados",
   "BasePath": "_content/Preguntados",
   "Mode": "Default",
@@ -435,12 +435,12 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\sql\\bd.sql",
+      "Identity": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\sql\\Datos.sql",
       "SourceId": "Preguntados",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\",
       "BasePath": "_content/Preguntados",
-      "RelativePath": "sql/bd.sql",
+      "RelativePath": "sql/Datos.sql",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -451,7 +451,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\sql\\bd.sql"
+      "OriginalItemSpec": "wwwroot\\sql\\Datos.sql"
+    },
+    {
+      "Identity": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\sql\\Tablas.sql",
+      "SourceId": "Preguntados",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\48313358\\Desktop\\Preguntados\\wwwroot\\",
+      "BasePath": "_content/Preguntados",
+      "RelativePath": "sql/Tablas.sql",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sql\\Tablas.sql"
     }
   ]
 }
