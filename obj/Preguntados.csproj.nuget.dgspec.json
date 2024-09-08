@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\48313358\\Desktop\\Preguntados\\Preguntados.csproj": {}
+    "C:\\Users\\mcywi\\Preguntados\\Preguntados.csproj": {}
   },
   "projects": {
-    "C:\\Users\\48313358\\Desktop\\Preguntados\\Preguntados.csproj": {
+    "C:\\Users\\mcywi\\Preguntados\\Preguntados.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\48313358\\Desktop\\Preguntados\\Preguntados.csproj",
+        "projectUniqueName": "C:\\Users\\mcywi\\Preguntados\\Preguntados.csproj",
         "projectName": "Preguntados",
-        "projectPath": "C:\\Users\\48313358\\Desktop\\Preguntados\\Preguntados.csproj",
-        "packagesPath": "C:\\Users\\48313358\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\48313358\\Desktop\\Preguntados\\obj\\",
+        "projectPath": "C:\\Users\\mcywi\\Preguntados\\Preguntados.csproj",
+        "packagesPath": "C:\\Users\\mcywi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mcywi\\Preguntados\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\48313358\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\mcywi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -77,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
