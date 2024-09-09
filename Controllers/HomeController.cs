@@ -33,19 +33,19 @@ public class HomeController : Controller
         return View("ConfigurarJuego");
     }
     public IActionResult Comenzar(string username, int dificultad, int categoria){
-        Console.WriteLine(username);
-        Console.WriteLine(dificultad);
-        Console.WriteLine(categoria);
+    Console.WriteLine(username);
+    Console.WriteLine(dificultad);
+    Console.WriteLine(categoria);
 
-        Juego.CargarPartida(username, dificultad, categoria);
+    Juego.CargarPartida(username, dificultad, categoria);
     
-        if(Juego.preguntas.Count != null){
-            return RedirectToAction("Jugar");
-        }
-        else{
-            return RedirectToAction("ConfigurarJuego");
-        }
+    if(Juego.preguntas.Count != null){
+        return RedirectToAction("Jugar");
     }
+    else{
+        return RedirectToAction("ConfigurarJuego");
+    }
+}
 
     public IActionResult Jugar(){
         ViewBag.PregSiguiente = Juego.ObtenerProximaPregunta();

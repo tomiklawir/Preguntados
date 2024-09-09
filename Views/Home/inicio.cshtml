@@ -77,22 +77,26 @@
                 },
             });
 
-            // Función para determinar el valor según el ángulo
-            const valueGenerator = (angleValue) => {
-                for (let i of rotationValues) {
-                    if (angleValue >= i.minDegree && angleValue <= i.maxDegree) {
-                        finalValue.innerHTML = `<p>¡Categoría: ${i.value}!</p>`;
-                        spinBtn.disabled = false;
+            
+         const valueGenerator = (angleValue) => {
+        for (let i of rotationValues) {
+            if (angleValue >= i.minDegree && angleValue <= i.maxDegree) {
+            finalValue.innerHTML = `<p>¡Categoría: ${i.value}!</p>`;
+            spinBtn.disabled = false;
 
-                        // Redirigir a la URL correspondiente
-                        setTimeout(() => {
-                            window.location.href = "/Home/Jugar";
-                        }, 2000); // Espera 2 segundos antes de redirigir
+           
+            let username = "usuarioEjemplo";
+            let dificultad = 1;
+            let categoria = i.value; 
+            
+            setTimeout(() => {
+                window.location.href = `/Home/Comenzar?username=${username}&dificultad=${dificultad}&categoria=${categoria}`;
+            }, 2000);
 
-                        break;
-                    }
-                }
-            };
+            break;
+        }
+    }
+};
 
             let count = 0;
             let resultValue = 101;

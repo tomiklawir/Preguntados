@@ -1,3 +1,4 @@
+
 public class Juego {
 
     public static string username { get; set; }
@@ -5,8 +6,11 @@ public class Juego {
     public static int cantidadPreguntasCorrectas { get; set; }
     public static List<Pregunta> preguntas { get; set;}
     public static List<Respuesta> respuestas { get; set; }
+    public static string categoriaElegida {get;set;}
+    public static string categoriaNombre {get;set;}
 
 	public static void InicializarJuego(){
+        Juego.categoriaNombre =categoriaElegida;
         username = null;
         puntajeActual = 0;
         cantidadPreguntasCorrectas = 0;
@@ -52,8 +56,12 @@ public class Juego {
 
     public static List<Respuesta> ObtenerProximasRespuestas(int idPregunta){
         List<Respuesta> rtas = new List<Respuesta> ();
+        if (idPregunta >= 0 && idPregunta < respuestas.Count)
+        {
         rtas.Add(respuestas[idPregunta]);
+        }
         return rtas;
+           
     }
 
     public static bool VerificarRespuesta(int IdPregunta, int IdRespuesta){
