@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   margin-top: 5%;
-  background-color: #6d12d6;
+  background-color: #6d12d6 !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,9 +16,10 @@ body {
 }
 
 .logo {
-  width: 30%; /* Ajusta el tamaño de la imagen según sea necesario */
+  
+  width: 50%; /* Ajusta el tamaño de la imagen según sea necesario */
   margin-bottom: 10%; /* Ajusta el espacio entre la imagen y el spinner */
-  margin-left: 35%;
+ margin-left: 25%;
 }
 .spinner {
   border: 8px solid #f3f3f3;
@@ -161,15 +162,13 @@ section{
   }
 }
 .custom-form {
-  margin-top: 30%;
+  margin-top: 20%;
   background-color: white;
   border: 2px solid #ce93d8; /* Borde violeta claro */
   padding: 2rem;
   border-radius: 20px; /* Bordes circulares */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  width: 200%;
-  
-  
+  width: 100%;
 }
 
 .custom-form .btn-primary {
@@ -189,3 +188,6 @@ section{
 .custom-form select, 
 .custom-form input {
   border-color: #ce93d8; }
+main{
+  width: 50%;
+}

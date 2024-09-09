@@ -33,19 +33,17 @@ public class HomeController : Controller
         return View("ConfigurarJuego");
     }
     public IActionResult Comenzar(string username, int dificultad, int categoria){
-        if (username == "")
-            username = "Jugador 1";
-        if (dificultad == 0)
-            dificultad = -1;
-        if (categoria == 0)
-            categoria = -1;
+        Console.WriteLine(username);
+        Console.WriteLine(dificultad);
+        Console.WriteLine(categoria);
 
         Juego.CargarPartida(username, dificultad, categoria);
-        if(Juego.preguntas.Count() > 0){
-            return RedirectToAction("Juego");
+    
+        if(Juego.preguntas.Count != null){
+            return RedirectToAction("Jugar");
         }
         else{
-            return RedirectToAction("ConfigurarJuego" );
+            return RedirectToAction("ConfigurarJuego");
         }
     }
 
