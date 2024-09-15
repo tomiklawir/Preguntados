@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VuTuX8QSimjGFuxjjPXekK5YNKZjQci+YfqopWUjg0w=",
+  "Hash": "ZeezNnI/HFgJ/3MVnZfurR4XauZslzkXvy4J5BzL/mc=",
   "Source": "Preguntados",
   "BasePath": "_content/Preguntados",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Head.png"
+    },
+    {
+      "Identity": "C:\\Users\\mcywi\\Downloads\\Preguntados-1\\wwwroot\\img\\imagen fin.jpg",
+      "SourceId": "Preguntados",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mcywi\\Downloads\\Preguntados-1\\wwwroot\\",
+      "BasePath": "_content/Preguntados",
+      "RelativePath": "img/imagen fin.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\imagen fin.jpg"
     },
     {
       "Identity": "C:\\Users\\mcywi\\Downloads\\Preguntados-1\\wwwroot\\img\\pregunta2.png",

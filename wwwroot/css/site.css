@@ -277,5 +277,47 @@ main{
 
 .respuesta-btn:hover{
   background-color: gainsboro;
-    transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.wrapper {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 20px;
+}
+
+.wrapper h1 {
+  font-size: 2.5em;
+  color: #0077B6;
+  margin-bottom: 20px;
+}
+
+.wrapper p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #0077B6;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 30px;
+  margin-top: 20px;
+  font-size: 1.1em;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #023E8A;
+}
+.Fin{
+  background-image: url("../img/imagen fin.jpg");
+  background-size: cover;
+  
 }
