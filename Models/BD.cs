@@ -1,7 +1,7 @@
 using System.Data.SqlClient;
 using Dapper;
 public class BD {
-private static string _connectionString = @"Server=localhost;Database=PreguntadORT;Trusted_Connection=True;";
+private static string _connectionString = @"Server=localhost\SQLEXPRESS;Database=PreguntadORT;Trusted_Connection=True;";
 
     public static List<Categoria> ObtenerCategorias() {
         List<Categoria> ListaCategorias = new List<Categoria>();

@@ -10,7 +10,7 @@ public class Juego {
     public static string categoriaNombre {get;set;}
 
 	public static void InicializarJuego(){
-        Juego.categoriaNombre =categoriaElegida;
+        Juego.categoriaNombre=categoriaElegida;
         username = null;
         puntajeActual = 0;
         cantidadPreguntasCorrectas = 0;
@@ -75,4 +75,5 @@ public class Juego {
             return false;
         }
     }
+    
 }

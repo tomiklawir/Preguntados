@@ -4,6 +4,8 @@ INSERT INTO Categorias (IdCategoria, Nombre, Foto) VALUES
 (2, 'Historia', NULL),
 (3, 'Ciencia', NULL),
 (4, 'Deportes', NULL);
+(5, 'Artes', NULL);
+(4, 'Entretenimiento', NULL);
 
 -- Insertar Dificultades
 INSERT INTO Dificultades (IdDificultad, Nombre) VALUES
